@@ -12,7 +12,7 @@ pipeline {
                  sh 'go build'
              }
          }
-         stage|('Test') {
+         stage('Test') {
              environment {
 		CODECOV_TOKEN = credentials('CODECOV_TOKEN')
 		}
